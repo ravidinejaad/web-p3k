@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="P3K Care – Platform edukasi pertolongan pertama pada kecelakaan. Pelajari cara menangani luka, patah tulang, pingsan, dan kondisi darurat lainnya." />
+  <meta name="keywords" content="P3K, pertolongan pertama, kecelakaan, first aid, luka, darurat, kesehatan" />
+  <title>P3K Care – Pahami P3K, Selamatkan Nyawa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar" aria-label="Navigasi utama">
+    <div class="nav-container">
+      <a href="#beranda" class="nav-logo" aria-label="P3K Care - Beranda">
+        <div class="logo-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="logo-text">P3K <span class="logo-accent">Care</span></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#beranda" class="nav-link active" data-section="beranda">Beranda</a></li>
+        <li><a href="#materi" class="nav-link" data-section="materi">Materi</a></li>
+        <li><a href="#panduan" class="nav-link" data-section="panduan">Panduan</a></li>
+        <li><a href="#tips" class="nav-link" data-section="tips">Tips</a></li>
+        <li><a href="#faq" class="nav-link" data-section="faq">FAQ</a></li>
+        <li><a href="#kontak" class="nav-link" data-section="kontak">Kontak</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="nav-links">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+    <div class="nav-overlay" id="nav-overlay"></div>
+  </nav>
+
+  <main>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="beranda" aria-labelledby="hero-title">
+      <!-- Floating background blobs -->
+      <div class="hero-bg" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="grid-overlay"></div>
+      </div>
+
+      <!-- Floating icons -->
+      <div class="floating-icons" aria-hidden="true">
+        <div class="float-icon fi-1">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z" fill="#ef4444" opacity="0.7"/></svg>
+        </div>
+        <div class="float-icon fi-2">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M19 3H5C3.9 3 3 3.9 3 5v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z" fill="#ef4444" opacity="0.5"/></svg>
+        </div>
+        <div class="float-icon fi-3">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#ef4444" opacity="0.6"/></svg>
+        </div>
+        <div class="float-icon fi-4">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/></svg>
+        </div>
+        <div class="float-icon fi-5">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#ef4444" stroke-width="2" opacity="0.5"/><path d="M12 8v4M12 16h.01" stroke="#ef4444" stroke-width="2" stroke-linecap="round" opacity="0.5"/></svg>
+        </div>
+        <div class="float-icon fi-6">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M11 2a2 2 0 0 0-2 2v5H4a2 2 0 0 0-2 2v2c0 1.1.9 2 2 2h5v5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-5h5a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-5V4a2 2 0 0 0-2-2h-2z" fill="#ef4444" opacity="0.55"/></svg>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-badge" data-aos="fade-up">
+          <span class="badge-dot"></span>
+          Edukasi Kesehatan &amp; Keselamatan
+        </div>
+        <h1 class="hero-title" id="hero-title" data-aos="fade-up" data-aos-delay="100">
+          Pahami P3K,<br/>
+          <span class="title-gradient">Selamatkan Nyawa</span>
+        </h1>
+        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+          Pelajari pertolongan pertama untuk membantu dalam situasi darurat.<br/>
+          Pengetahuan yang kamu miliki bisa menjadi perbedaan antara hidup dan mati.
+        </p>
+        <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+          <a href="#materi" class="btn btn-primary" id="cta-mulai-belajar">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 3l14 9-14 9V3z" fill="currentColor"/></svg>
+            Mulai Belajar
+          </a>
+          <a href="#panduan" class="btn btn-outline" id="cta-lihat-panduan">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Lihat Panduan
+          </a>
+        </div>
+        <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+          <div class="stat-item">
+            <span class="stat-number" data-count="5">0</span>
+            <span class="stat-label">Topik Materi</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="10">0</span>
+            <span class="stat-label">Tips Praktis</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="100">0</span><span class="stat-plus">%</span>
+            <span class="stat-label">Gratis</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator" aria-label="Gulir ke bawah">
+        <div class="scroll-dot"></div>
+      </div>
+    </section>
+
+    <!-- ===== MATERI SECTION ===== -->
+    <section class="section materi-section" id="materi" aria-labelledby="materi-title">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Materi Pembelajaran</span>
+          <h2 class="section-title" id="materi-title">Topik P3K yang Perlu<br/><span class="title-gradient">Kamu Ketahui</span></h2>
+          <p class="section-desc">Kuasai pengetahuan dasar pertolongan pertama untuk berbagai jenis kondisi darurat.</p>
+        </div>
+        <div class="cards-grid" id="materi-grid">
+
+          <article class="card" data-aos="fade-up" data-aos-delay="0" tabindex="0">
+            <div class="card-icon-wrap" style="--card-color: #ef4444">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5zm.5 8.5v-5h-6v5H7v-6.5c0-.83.67-1.5 1.5-1.5h7c.83 0 1.5.67 1.5 1.5V18.5H15zM2 12c0-.55.45-1 1-1h1V9H3c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h3c.55 0 1 .45 1 1v2h1c.55 0 1 .45 1 1v2h1c.55 0 1 .45 1 1v2h-2v-1H4v1H2v-2c0-.55.45-1 1-1V12z" fill="currentColor" opacity=".8"/><path d="M20 18c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2v12z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+            </div>
+            <div class="card-badge">Dasar</div>
+            <h3 class="card-title">Luka Ringan</h3>
+            <p class="card-desc">Cara membersihkan dan membalut luka gores, sayat, dan lecet dengan benar untuk mencegah infeksi.</p>
+            <button class="card-btn" onclick="openModal('luka-ringan')" id="btn-luka-ringan" aria-label="Pelajari tentang luka ringan">
+              Pelajari
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </article>
+
+          <article class="card" data-aos="fade-up" data-aos-delay="80" tabindex="0">
+            <div class="card-icon-wrap" style="--card-color: #f97316">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2c0 0-5 4.5-5 10 0 2.76 2.24 5 5 5s5-2.24 5-5c0-5.5-5-10-5-10z" fill="currentColor" opacity=".7"/><path d="M8.5 13.5c.5 1.5 2 2.5 3.5 2.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <div class="card-badge" style="background: rgba(249,115,22,0.12); color:#f97316">Sedang</div>
+            <h3 class="card-title">Luka Bakar</h3>
+            <p class="card-desc">Penanganan luka bakar derajat ringan hingga sedang, tips mendinginkan luka, dan kapan harus ke dokter.</p>
+            <button class="card-btn" onclick="openModal('luka-bakar')" id="btn-luka-bakar" aria-label="Pelajari tentang luka bakar">
+              Pelajari
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </article>
+
+          <article class="card" data-aos="fade-up" data-aos-delay="160" tabindex="0">
+            <div class="card-icon-wrap" style="--card-color: #8b5cf6">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2L9 9H2l6 4.5L5.5 21 12 16l6.5 5L16 13.5 22 9h-7L12 2z" fill="currentColor" opacity=".3"/><path d="M7 14c-.83 0-1.5-.67-1.5-1.5S6.17 11 7 11h10c.83 0 1.5.67 1.5 1.5S17.83 14 17 14H7z" fill="currentColor"/><rect x="10" y="2" width="4" height="20" rx="2" fill="currentColor" opacity=".8"/></svg>
+            </div>
+            <div class="card-badge" style="background: rgba(139,92,246,0.12); color:#8b5cf6">Penting</div>
+            <h3 class="card-title">Patah Tulang</h3>
+            <p class="card-desc">Cara memobilisasi bagian tubuh yang patah, membuat bidai darurat, dan prosedur aman saat evakuasi korban.</p>
+            <button class="card-btn" onclick="openModal('patah-tulang')" id="btn-patah-tulang" aria-label="Pelajari tentang patah tulang">
+              Pelajari
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </article>
+
+          <article class="card" data-aos="fade-up" data-aos-delay="240" tabindex="0">
+            <div class="card-icon-wrap" style="--card-color: #06b6d4">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2a5 5 0 100 10A5 5 0 0012 2zm0 12c-5.33 0-8 2.67-8 4v2h16v-2c0-1.33-2.67-4-8-4z" fill="currentColor" opacity=".7"/><path d="M8 12v4M16 12v4" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <div class="card-badge" style="background: rgba(6,182,212,0.12); color:#06b6d4">Waspada</div>
+            <h3 class="card-title">Pingsan</h3>
+            <p class="card-desc">Langkah menangani seseorang yang kehilangan kesadaran, posisi pemulihan yang benar, dan tindakan darurat.</p>
+            <button class="card-btn" onclick="openModal('pingsan')" id="btn-pingsan" aria-label="Pelajari tentang pingsan">
+              Pelajari
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </article>
+
+          <article class="card" data-aos="fade-up" data-aos-delay="320" tabindex="0">
+            <div class="card-icon-wrap" style="--card-color: #10b981">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" fill="currentColor" opacity=".7"/><path d="M8 10c0-2.21 1.79-4 4-4s4 1.79 4 4" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+            </div>
+            <div class="card-badge" style="background: rgba(16,185,129,0.12); color:#10b981">Kritis</div>
+            <h3 class="card-title">Tersedak</h3>
+            <p class="card-desc">Teknik Heimlich maneuver dan cara membantu seseorang yang tersedak pada dewasa, anak-anak, dan bayi.</p>
+            <button class="card-btn" onclick="openModal('tersedak')" id="btn-tersedak" aria-label="Pelajari tentang tersedak">
+              Pelajari
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PANDUAN SECTION ===== -->
+    <section class="section panduan-section" id="panduan" aria-labelledby="panduan-title">
+      <div class="container">
+        <div class="panduan-inner">
+          <div class="panduan-header" data-aos="fade-right">
+            <span class="section-tag">Langkah demi Langkah</span>
+            <h2 class="section-title" id="panduan-title">Panduan Pertolongan<br/><span class="title-gradient">Pertama Umum</span></h2>
+            <p class="section-desc">Ikuti langkah-langkah ini secara berurutan saat menghadapi situasi darurat medis.</p>
+          </div>
+          <div class="timeline">
+
+            <div class="timeline-item" data-aos="fade-left" data-aos-delay="0">
+              <div class="timeline-connector" aria-hidden="true">
+                <div class="timeline-line"></div>
+                <div class="timeline-dot">
+                  <span>1</span>
+                </div>
+              </div>
+              <div class="timeline-card">
+                <div class="timeline-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#ef4444" stroke-width="2"/><path d="M12 16v-4M12 8h.01" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <div>
+                  <h3 class="timeline-title">Cek Kondisi Korban</h3>
+                  <p class="timeline-desc">Pastikan area aman. Periksa kesadaran korban dengan memanggil nama atau menepuk bahunya. Perhatikan pernapasan, denyut nadi, dan tanda perdarahan.</p>
+                  <div class="timeline-tags">
+                    <span class="tag">Keamanan</span>
+                    <span class="tag">Kesadaran</span>
+                    <span class="tag">Pernapasan</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-left" data-aos-delay="150">
+              <div class="timeline-connector" aria-hidden="true">
+                <div class="timeline-line"></div>
+                <div class="timeline-dot">
+                  <span>2</span>
+                </div>
+              </div>
+              <div class="timeline-card">
+                <div class="timeline-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.7 19.79 19.79 0 01.22 1.04 2 2 0 012.22 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div>
+                  <h3 class="timeline-title">Hubungi Bantuan</h3>
+                  <p class="timeline-desc">Segera hubungi 119 (ambulans) atau 110 (polisi) jika diperlukan. Berikan informasi lokasi yang jelas, jumlah korban, dan kondisi darurat yang terjadi.</p>
+                  <div class="timeline-tags">
+                    <span class="tag">Nomor Darurat</span>
+                    <span class="tag">119 / 110</span>
+                    <span class="tag">Lokasi</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-left" data-aos-delay="300">
+              <div class="timeline-connector" aria-hidden="true">
+                <div class="timeline-line last"></div>
+                <div class="timeline-dot">
+                  <span>3</span>
+                </div>
+              </div>
+              <div class="timeline-card">
+                <div class="timeline-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M11 2a2 2 0 00-2 2v5H4a2 2 0 00-2 2v2c0 1.1.9 2 2 2h5v5a2 2 0 002 2h2a2 2 0 002-2v-5h5a2 2 0 002-2v-2a2 2 0 00-2-2h-5V4a2 2 0 00-2-2h-2z" fill="#ef4444" opacity=".8"/></svg>
+                </div>
+                <div>
+                  <h3 class="timeline-title">Lakukan Pertolongan Awal</h3>
+                  <p class="timeline-desc">Berikan pertolongan sesuai kondisi: hentikan perdarahan, lakukan CPR jika perlu, stabilkan posisi korban, dan jangan pindahkan kecuali dalam bahaya.</p>
+                  <div class="timeline-tags">
+                    <span class="tag">CPR</span>
+                    <span class="tag">Perdarahan</span>
+                    <span class="tag">Stabilisasi</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TIPS SECTION ===== -->
+    <section class="section tips-section" id="tips" aria-labelledby="tips-title">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Cepat &amp; Praktis</span>
+          <h2 class="section-title" id="tips-title">Tips Penting<br/><span class="title-gradient">Pertolongan Pertama</span></h2>
+          <p class="section-desc">Ingat tips-tips ini agar siap bertindak saat situasi darurat tiba.</p>
+        </div>
+        <div class="tips-grid">
+
+          <div class="tip-card" data-aos="zoom-in" data-aos-delay="0">
+            <div class="tip-number" aria-hidden="true">01</div>
+            <div class="tip-icon" aria-hidden="true">🧤</div>
+            <h3 class="tip-title">Gunakan Sarung Tangan</h3>
+            <p class="tip-desc">Selalu gunakan sarung tangan sekali pakai sebelum menyentuh luka untuk melindungi dirimu dan korban dari infeksi silang.</p>
+          </div>
+
+          <div class="tip-card" data-aos="zoom-in" data-aos-delay="80">
+            <div class="tip-number" aria-hidden="true">02</div>
+            <div class="tip-icon" aria-hidden="true">❄️</div>
+            <h3 class="tip-title">Dinginkan Luka Bakar</h3>
+            <p class="tip-desc">Aliri luka bakar dengan air mengalir selama 10–20 menit. Jangan gunakan es batu, mentega, atau pasta gigi.</p>
+          </div>
+
+          <div class="tip-card" data-aos="zoom-in" data-aos-delay="160">
+            <div class="tip-number" aria-hidden="true">03</div>
+            <div class="tip-icon" aria-hidden="true">🫁</div>
+            <h3 class="tip-title">Pernapasan Buatan</h3>
+            <p class="tip-desc">Pastikan jalur napas terbuka. Miringkan kepala ke belakang dan angkat dagu sebelum memberikan napas buatan.</p>
+          </div>
+
+          <div class="tip-card" data-aos="zoom-in" data-aos-delay="240">
+            <div class="tip-number" aria-hidden="true">04</div>
+            <div class="tip-icon" aria-hidden="true">🩺</div>
+            <h3 class="tip-title">Hentikan Perdarahan</h3>
+            <p class="tip-desc">Tekan luka dengan kain bersih secara kuat dan terus-menerus. Jangan lepas kain meski sudah basah, tambahkan di atasnya.</p>
+          </div>
+
+          <div class="tip-card" data-aos="zoom-in" data-aos-delay="320">
+            <div class="tip-number" aria-hidden="true">05</div>
+            <div class="tip-icon" aria-hidden="true">🤸</div>
+            <h3 class="tip-title">Posisi Pemulihan</h3>
+            <p class="tip-desc">Tempatkan korban tidak sadar dalam posisi miring ke kiri (recovery position) untuk mencegah tersedak cairan.</p>
+          </div>
+
+          <div class="tip-card" data-aos="zoom-in" data-aos-delay="400">
+            <div class="tip-number" aria-hidden="true">06</div>
+            <div class="tip-icon" aria-hidden="true">📱</div>
+            <h3 class="tip-title">Simpan Nomor Darurat</h3>
+            <p class="tip-desc">Simpan nomor 119 (ambulans), 110 (polisi), dan 113 (pemadam kebakaran) di ponselmu agar mudah diakses saat darurat.</p>
+          </div>
+
+          <div class="tip-card" data-aos="zoom-in" data-aos-delay="480">
+            <div class="tip-number" aria-hidden="true">07</div>
+            <div class="tip-icon" aria-hidden="true">🎒</div>
+            <h3 class="tip-title">Siapkan Kotak P3K</h3>
+            <p class="tip-desc">Pastikan kotak P3K berisi plester, kain kasa, antiseptik, gunting, peniti, dan obat-obatan dasar selalu tersedia di rumah.</p>
+          </div>
+
+          <div class="tip-card" data-aos="zoom-in" data-aos-delay="560">
+            <div class="tip-number" aria-hidden="true">08</div>
+            <div class="tip-icon" aria-hidden="true">🧠</div>
+            <h3 class="tip-title">Tetap Tenang</h3>
+            <p class="tip-desc">Kepanikan memperburuk situasi. Tarik napas dalam, fokus, dan tindak dengan sistematis sesuai urutan DRABC.</p>
+          </div>
+
+          <div class="tip-card" data-aos="zoom-in" data-aos-delay="640">
+            <div class="tip-number" aria-hidden="true">09</div>
+            <div class="tip-icon" aria-hidden="true">🏋️</div>
+            <h3 class="tip-title">Latihan Rutin CPR</h3>
+            <p class="tip-desc">Ikuti pelatihan CPR setidaknya sekali setahun. Tekan dada sedalam 5–6 cm dengan ritme 100–120 kali per menit.</p>
+          </div>
+
+          <div class="tip-card" data-aos="zoom-in" data-aos-delay="720">
+            <div class="tip-number" aria-hidden="true">10</div>
+            <div class="tip-icon" aria-hidden="true">🔍</div>
+            <h3 class="tip-title">Kenali Tanda Bahaya</h3>
+            <p class="tip-desc">Bibir biru, napas tidak teratur, tidak responsif, dan perdarahan tidak berhenti adalah tanda darurat yang harus ditangani segera.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EMERGENCY SECTION ===== -->
+    <section class="emergency-section" id="darurat" aria-labelledby="darurat-title">
+      <div class="emergency-bg" aria-hidden="true">
+        <div class="emrg-blob emrg-blob-1"></div>
+        <div class="emrg-blob emrg-blob-2"></div>
+      </div>
+      <div class="container">
+        <div class="emergency-content" data-aos="zoom-in">
+          <div class="pulse-ring" aria-hidden="true">
+            <div class="pulse-inner">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.7 19.79 19.79 0 01.22 1.04 2 2 0 012.22 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" fill="white"/>
+              </svg>
+            </div>
+          </div>
+          <div class="emergency-text">
+            <span class="emergency-label">DARURAT MEDIS</span>
+            <h2 class="emergency-title" id="darurat-title">Dalam kondisi darurat, segera hubungi layanan bantuan</h2>
+            <p class="emergency-sub">Setiap detik berharga. Jangan tunda, hubungi tim medis profesional segera.</p>
+          </div>
+          <div class="emergency-actions">
+            <a href="tel:119" class="btn-emergency" id="cta-hubungi-darurat">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.7 19.79 19.79 0 01.22 1.04 2 2 0 012.22 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" fill="currentColor"/>
+              </svg>
+              Hubungi Sekarang
+            </a>
+            <div class="emergency-numbers">
+              <div class="emrg-num">
+                <span class="emrg-num-label">Ambulans</span>
+                <span class="emrg-num-val">119</span>
+              </div>
+              <div class="emrg-num">
+                <span class="emrg-num-label">Polisi</span>
+                <span class="emrg-num-val">110</span>
+              </div>
+              <div class="emrg-num">
+                <span class="emrg-num-label">Pemadam</span>
+                <span class="emrg-num-val">113</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Pertanyaan Umum</span>
+          <h2 class="section-title" id="faq-title">Sering Ditanyakan<br/><span class="title-gradient">tentang P3K</span></h2>
+          <p class="section-desc">Temukan jawaban atas pertanyaan-pertanyaan yang paling sering diajukan.</p>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-list" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="faq-item" id="faq-1">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1" onclick="toggleFaq(this)">
+                <span>Apa itu P3K?</span>
+                <div class="faq-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+              </button>
+              <div class="faq-answer" id="faq-answer-1" role="region">
+                <div class="faq-answer-inner">
+                  <p>P3K singkatan dari <strong>Pertolongan Pertama Pada Kecelakaan</strong>. Ini adalah tindakan pertolongan awal yang diberikan kepada korban kecelakaan atau penyakit mendadak sebelum mendapatkan pertolongan dari tenaga medis profesional. Tujuannya untuk menyelamatkan nyawa, mencegah kondisi memburuk, dan meringankan penderitaan korban.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item" id="faq-2">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2" onclick="toggleFaq(this)">
+                <span>Kapan harus memberikan pertolongan pertama?</span>
+                <div class="faq-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+              </button>
+              <div class="faq-answer" id="faq-answer-2" role="region">
+                <div class="faq-answer-inner">
+                  <p>Pertolongan pertama harus diberikan segera ketika terjadi: kecelakaan (terjatuh, tertabrak, dll), luka yang mengeluarkan darah, seseorang tidak sadarkan diri, serangan jantung atau sesak napas, tersedak, luka bakar, atau kondisi darurat medis lainnya. Prinsipnya: <strong>jangan tunda, bertindaklah segera</strong>.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item" id="faq-3">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3" onclick="toggleFaq(this)">
+                <span>Apakah saya perlu pelatihan khusus untuk memberikan P3K?</span>
+                <div class="faq-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+              </button>
+              <div class="faq-answer" id="faq-answer-3" role="region">
+                <div class="faq-answer-inner">
+                  <p>Untuk pertolongan dasar seperti membersihkan luka ringan, tidak diperlukan pelatihan khusus. Namun untuk tindakan yang lebih kompleks seperti CPR, Heimlich maneuver, atau penanganan patah tulang, sangat disarankan untuk mengikuti pelatihan P3K resmi yang diselenggarakan oleh PMI, rumah sakit, atau lembaga kesehatan terpercaya.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item" id="faq-4">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4" onclick="toggleFaq(this)">
+                <span>Apa saja isi kotak P3K yang ideal?</span>
+                <div class="faq-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+              </button>
+              <div class="faq-answer" id="faq-answer-4" role="region">
+                <div class="faq-answer-inner">
+                  <p>Kotak P3K ideal berisi: <strong>plester</strong> berbagai ukuran, <strong>kain kasa steril</strong>, <strong>perban elastis</strong>, <strong>antiseptik</strong> (betadine/alkohol 70%), <strong>gunting</strong> dan pinset, <strong>sarung tangan sekali pakai</strong>, thermometer, obat pereda nyeri (paracetamol), obat antialergi, dan <strong>buku panduan P3K</strong>. Periksa dan perbarui isinya setiap 6 bulan sekali.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item" id="faq-5">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5" onclick="toggleFaq(this)">
+                <span>Bagaimana cara melakukan CPR yang benar?</span>
+                <div class="faq-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+              </button>
+              <div class="faq-answer" id="faq-answer-5" role="region">
+                <div class="faq-answer-inner">
+                  <p>Langkah CPR dasar: <strong>1)</strong> Pastikan korban tidak responsif dan tidak bernapas normal. <strong>2)</strong> Hubungi 119. <strong>3)</strong> Posisikan korban terlentang di permukaan keras. <strong>4)</strong> Letakkan kedua tangan di tengah dada. <strong>5)</strong> Tekan dada sedalam <strong>5–6 cm</strong> dengan kecepatan <strong>100–120 kali/menit</strong>. <strong>6)</strong> Setelah 30 bantuan, berikan 2 napas buatan. Ulangi hingga bantuan tiba.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item" id="faq-6">
+              <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6" onclick="toggleFaq(this)">
+                <span>Apa perbedaan luka bakar derajat 1, 2, dan 3?</span>
+                <div class="faq-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+              </button>
+              <div class="faq-answer" id="faq-answer-6" role="region">
+                <div class="faq-answer-inner">
+                  <p><strong>Derajat 1:</strong> Hanya lapisan luar kulit, kemerahan dan nyeri (seperti sunburn). <strong>Derajat 2:</strong> Lebih dalam, terbentuk lepuhan berisi cairan, sangat nyeri. <strong>Derajat 3:</strong> Seluruh lapisan kulit rusak, tampak putih/hitam, mungkin tidak nyeri karena saraf rusak. Derajat 2 yang luas dan semua derajat 3 harus <strong>segera dibawa ke UGD</strong>.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KONTAK SECTION ===== -->
+    <section class="section kontak-section" id="kontak" aria-labelledby="kontak-title">
+      <div class="container">
+        <div class="kontak-inner">
+          <div class="kontak-info" data-aos="fade-right">
+            <span class="section-tag">Hubungi Kami</span>
+            <h2 class="section-title" id="kontak-title">Ada Pertanyaan<br/><span class="title-gradient">atau Masukan?</span></h2>
+            <p class="section-desc">Kami siap membantu kamu memahami P3K lebih dalam. Jangan ragu untuk menghubungi kami.</p>
+            <div class="kontak-items">
+              <div class="kontak-item">
+                <div class="kontak-item-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#ef4444" stroke-width="2" fill="none"/><path d="M22 6l-10 7L2 6" stroke="#ef4444" stroke-width="2"/></svg>
+                </div>
+                <div>
+                  <p class="kontak-item-label">Email</p>
+                  <p class="kontak-item-val">info@p3kcare.id</p>
+                </div>
+              </div>
+              <div class="kontak-item">
+                <div class="kontak-item-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.7 19.79 19.79 0 01.22 1.04 2 2 0 012.22 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="#ef4444" stroke-width="2"/></svg>
+                </div>
+                <div>
+                  <p class="kontak-item-label">Telepon</p>
+                  <p class="kontak-item-val">+62 811 0000 119</p>
+                </div>
+              </div>
+              <div class="kontak-item">
+                <div class="kontak-item-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="#ef4444" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="#ef4444" stroke-width="2"/></svg>
+                </div>
+                <div>
+                  <p class="kontak-item-label">Lokasi</p>
+                  <p class="kontak-item-val">Jakarta, Indonesia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="kontak-form-wrap" data-aos="fade-left">
+            <form class="kontak-form" id="kontak-form" onsubmit="handleFormSubmit(event)" novalidate>
+              <div class="form-group">
+                <div class="form-floating">
+                  <input type="text" id="nama" name="nama" class="form-input" placeholder=" " required autocomplete="name" />
+                  <label for="nama" class="form-label">Nama Lengkap</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-floating">
+                  <input type="email" id="email" name="email" class="form-input" placeholder=" " required autocomplete="email" />
+                  <label for="email" class="form-label">Alamat Email</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-floating">
+                  <textarea id="pesan" name="pesan" class="form-input form-textarea" placeholder=" " required rows="5"></textarea>
+                  <label for="pesan" class="form-label">Pesan Anda</label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="btn-kirim-pesan">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 2L11 13M22 2L15 22 11 13 2 9l20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Kirim Pesan
+              </button>
+              <div class="form-success" id="form-success" role="alert" aria-live="polite">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 4L12 14.01l-3-3" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span>Pesan berhasil dikirim! Kami akan segera menghubungi kamu.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" aria-labelledby="footer-brand">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand-col">
+            <a href="#beranda" class="nav-logo footer-logo" id="footer-brand" aria-label="P3K Care">
+              <div class="logo-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <span class="logo-text">P3K <span class="logo-accent">Care</span></span>
+            </a>
+            <p class="footer-desc">Platform edukasi P3K (Pertolongan Pertama Pada Kecelakaan) yang menyediakan panduan praktis untuk membantu siapa saja bertindak tepat dalam situasi darurat medis.</p>
+            <div class="footer-social" aria-label="Media sosial P3K Care">
+              <a href="#" class="social-btn" aria-label="Instagram P3K Care">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" stroke="currentColor" stroke-width="2"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="Twitter P3K Care">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="YouTube P3K Care">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.96-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z" stroke="currentColor" stroke-width="2"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="Facebook P3K Care">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-nav-col">
+            <h3 class="footer-col-title">Navigasi</h3>
+            <ul class="footer-links" role="list">
+              <li><a href="#beranda" class="footer-link">Beranda</a></li>
+              <li><a href="#materi" class="footer-link">Materi P3K</a></li>
+              <li><a href="#panduan" class="footer-link">Panduan Umum</a></li>
+              <li><a href="#tips" class="footer-link">Tips Cepat</a></li>
+              <li><a href="#faq" class="footer-link">FAQ</a></li>
+              <li><a href="#kontak" class="footer-link">Kontak</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-nav-col">
+            <h3 class="footer-col-title">Materi P3K</h3>
+            <ul class="footer-links" role="list">
+              <li><a href="#materi" class="footer-link">Luka Ringan</a></li>
+              <li><a href="#materi" class="footer-link">Luka Bakar</a></li>
+              <li><a href="#materi" class="footer-link">Patah Tulang</a></li>
+              <li><a href="#materi" class="footer-link">Pingsan</a></li>
+              <li><a href="#materi" class="footer-link">Tersedak</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-nav-col">
+            <h3 class="footer-col-title">Nomor Darurat</h3>
+            <ul class="footer-links" role="list">
+              <li><a href="tel:119" class="footer-link">🚑 119 – Ambulans</a></li>
+              <li><a href="tel:110" class="footer-link">🚔 110 – Polisi</a></li>
+              <li><a href="tel:113" class="footer-link">🚒 113 – Pemadam</a></li>
+              <li><a href="tel:112" class="footer-link">📞 112 – Darurat Umum</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-copy">© 2025 P3K Care. Dibuat dengan ❤️ untuk keselamatan bersama.</p>
+        <p class="footer-disclaimer">Website ini bersifat edukatif. Dalam keadaan darurat, selalu hubungi tenaga medis profesional.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== MODAL ===== -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modal-close" onclick="closeModal()" aria-label="Tutup modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <div class="modal-content" id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- ===== SCROLL TO TOP ===== -->
+  <button class="scroll-top" id="scroll-top" aria-label="Kembali ke atas" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M18 15l-6-6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
